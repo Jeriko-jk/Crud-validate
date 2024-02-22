@@ -70,7 +70,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
     }
     else{
         if(selectedRow == null){
-           const list = document.querySelector("#student-list")
+           const list = document.querySelector("#student-list");
            const row = document.createElement("tr");
            row.innerHTML = `
            <td>${firstName}</td>
@@ -94,7 +94,7 @@ document.querySelector("#student-form").addEventListener("submit", (e) =>{
         clearFields();
     }
 });
-document.querySelector("#student-list").addEventListener("clik",(e) =>{
+document.querySelector("#student-list").addEventListener("click",(e) =>{
     target = e.target;
     if(target.classList.contains("edit")){
         selectedRow = target.parentElement.parentElement;
